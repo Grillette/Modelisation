@@ -50,6 +50,10 @@ public class ListeClasse {
 		return borneSupp;
 	}
 	
+	public List<Borne<Double>> getClasses() {
+	    return listeClasse;
+	  }
+	
 	public int getNbElements() {
 		int nbElement = 0;
 		for (Borne<Double> classe : listeClasse) {

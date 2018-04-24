@@ -14,6 +14,8 @@ import javax.swing.JSplitPane;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
+import aleatoire.ListeClasse;
+
 public class Application extends JFrame implements ActionListener {
 
 	private JPanel contentPane;
@@ -46,7 +48,7 @@ public class Application extends JFrame implements ActionListener {
 	public Application() {
 		setDefaultCloseOperation(3);
 	    setBounds(100, 100, 779, 522);
-	    setTitle("Vérification de la fonction random de la librairie Java Math");
+	    setTitle("Vï¿½rification de la fonction random de la librairie Java Math");
 	    this.contentPane = new JPanel();
 	    this.contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	    setContentPane(this.contentPane);
@@ -99,6 +101,16 @@ public class Application extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
+		if (e.getSource().equals(btnLoiExponentielle)) {
+			ListeClasse constatee = createGraphiqueExponentielleConstatee();
+			//ListeClasse theorique = createGraphiqueUniformeTheorique();
+			
+			lblTitre.setText("Loi exponentielle");
+		}
+	}
+	
+	
+	private ListeClasse createGraphiqueExponentielleConstatee() {
 		
 	}
 	
